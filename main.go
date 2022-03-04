@@ -1,7 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
+
+func lenAndUpper(name string) (int, string) {
+	return len(name), strings.ToUpper(name)
+}
+func repeatMe(words ...string) {
+	fmt.Println(words)
+}
 
 func main() {
-	fmt.Println("hello world")
+	totalLength, upperName := lenAndUpper("seokkku")
+	fmt.Println(totalLength, upperName)
+	repeatMe("a", "b", "c", "d")
 }
