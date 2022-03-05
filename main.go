@@ -33,8 +33,14 @@ func forRange(numbers ...int) {
 	fmt.Println(total)
 
 }
+func ifPractice(age int) bool {
+	if koreanAge := age + 2; koreanAge < 20 {
+		return false
+	}
+	return true
+}
 
 func main() {
-	forRange(1, 2, 3, 4, 5, 6)
+	fmt.Println(ifPractice(16))
 
 }
