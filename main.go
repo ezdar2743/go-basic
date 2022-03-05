@@ -19,10 +19,22 @@ func repeatMe(words ...string) {
 	defer fmt.Println("I'm done")
 	fmt.Println(words)
 }
+func nomalFor(numbers ...int) {
+	for i := 0; i < len(numbers); i++ {
+		fmt.Println(numbers[i])
+	}
+}
+
+func forRange(numbers ...int) {
+	total := 0
+	for _, number := range numbers {
+		total += number
+	}
+	fmt.Println(total)
+
+}
 
 func main() {
-	totalLen, upper := lenAndUpper2("nwaaw")
-	fmt.Println(totalLen, upper)
-	repeatMe("ss", "ss2")
+	forRange(1, 2, 3, 4, 5, 6)
 
 }
