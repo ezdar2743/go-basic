@@ -39,8 +39,19 @@ func ifPractice(age int) bool {
 	}
 	return true
 }
+func switchPrac(age int) bool {
+	switch {
+	case age < 18:
+		return false
+	case age == 18:
+		return true
+	case age >= 70:
+		return false
+	}
+	return false
+}
 
 func main() {
-	fmt.Println(ifPractice(16))
+	fmt.Println(switchPrac(26))
 
 }
