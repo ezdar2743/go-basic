@@ -25,6 +25,7 @@ func nomalFor(numbers ...int) {
 	}
 }
 
+// range = for each for index, value 를 받음
 func forRange(numbers ...int) {
 	total := 0
 	for _, number := range numbers {
@@ -51,7 +52,21 @@ func switchPrac(age int) bool {
 	return false
 }
 
-func main() {
-	fmt.Println(switchPrac(26))
+type person struct {
+	name   string
+	age    int
+	fvFood []string
+}
 
+func main() {
+	// name := []string{"aa", "ddd"}
+	// names := append(name, "asdasd")
+	// seokku := map[string]string{"name": "seokkku", "age": "29"}
+	// for key, value := range seokku {
+	// 	fmt.Println(key, value)
+	// }
+	// fmt.Println(seokku)
+	Food := []string{"beef", "fork"}
+	seokkku := person{name: "seokkku", age: 26, fvFood: Food}
+	fmt.Println(seokkku)
 }
